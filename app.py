@@ -148,6 +148,16 @@ st.markdown("""
         padding-top: 1rem !important;
         max-width: 100% !important;
     }
+    /* Stack columns on mobile */
+div[data-testid="stHorizontalBlock"] {
+    flex-direction: column !important;
+}
+
+div[data-testid="column"] {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+}
 
     /* Hero banner */
     .hero {
@@ -420,13 +430,13 @@ if predict_clicked:
     with r1:
         st.markdown(
             f'<div class="metric-box" style="background:linear-gradient(135deg,#0EA5A4,#5EEAD4);">'
-            f'<div class="m-label">📉 Churn Probability</div><div class="m-value">{probability:.1f}%</div></div>',
+            f'<div class="m-label">🎲 Churn Probability</div><div class="m-value">{probability:.1f}%</div></div>',
             unsafe_allow_html=True,
         )
     with r2:
         st.markdown(
             f'<div class="metric-box" style="background:{chip_color};">'
-            f'<div class="m-label">🚦 Risk Level</div><div class="m-value">{risk}</div></div>',
+            f'<div class="m-label">⚠️ Risk Level</div><div class="m-value">{risk}</div></div>',
             unsafe_allow_html=True,
         )
     with r3:
