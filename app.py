@@ -158,6 +158,17 @@ div[data-testid="column"] {
     flex: 1 1 100% !important;
     min-width: 100% !important;
 }
+/* Stack top statistic cards on mobile */
+.stat-row {
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.stat-chip {
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+}
 
     /* Hero banner */
     .hero {
@@ -318,9 +329,9 @@ st.markdown(
 st.markdown(
     """
     <div class="stat-row">
-        <div class="stat-chip chip-purple"><div class="label">🧠 ML Model</div><div class="value">Logistic Regression</div></div>
-        <div class="stat-chip chip-pink"><div class="label">🎯 Model Accuracy</div><div class="value">≈ 80%</div></div>
-        <div class="stat-chip chip-orange"><div class="label">🗂️ Training Records</div><div class="value">7,032</div></div>
+        <div class="stat-chip chip-purple"><div class="label">🤖 ML Model</div><div class="value">Logistic Regression</div></div>
+        <div class="stat-chip chip-pink"><div class="label">📊 Model Accuracy</div><div class="value">≈ 80%</div></div>
+        <div class="stat-chip chip-orange"><div class="label">👥 Training Records</div><div class="value">7,032</div></div>
     </div>
     """,
     unsafe_allow_html=True,
