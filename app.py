@@ -288,6 +288,18 @@ div[data-testid="column"] {
         padding-right: 0.75rem !important;
     }
 }
+/* Hide Streamlit Cloud branding */
+footer {
+    visibility: hidden !important;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
+
+.stDeployButton {
+    display: none !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
