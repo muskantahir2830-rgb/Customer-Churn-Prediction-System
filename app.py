@@ -288,19 +288,7 @@ div[data-testid="column"] {
         padding-right: 0.75rem !important;
     }
 }
-/* Hide Streamlit Cloud bottom-right badges */
-[data-testid="stAppDeployButton"],
-[data-testid="stToolbar"],
-[data-testid="stDecoration"],
-[data-testid="stStatusWidget"] {
-    display: none !important;
-}
 
-/* Hide Streamlit viewer badges */
-.viewerBadge_container__1QSob,
-.viewerBadge_link__1S137 {
-    display: none !important;
-}
 </style>
 """, unsafe_allow_html=True)
 
