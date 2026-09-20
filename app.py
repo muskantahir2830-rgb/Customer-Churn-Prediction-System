@@ -145,7 +145,7 @@ st.markdown("""
     .block-container {
         padding-left: 0.8rem !important;
         padding-right: 0.8rem !important;
-        padding-top: 1rem !important;
+        padding-top: 4rem !important;
         max-width: 100% !important;
     }
     /* Stack columns on mobile */
