@@ -134,6 +134,139 @@ st.markdown("""
     div[data-testid="stProgress"] > div > div {
         background: linear-gradient(90deg, #0EA5A4, #2563EB, #8B5CF6) !important;
     }
+    /* =========================================
+   MOBILE RESPONSIVE - iPhone + Android
+   ========================================= */
+
+/* All phones */
+@media screen and (max-width: 768px) {
+
+    /* Main page */
+    .block-container {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+        padding-top: 1rem !important;
+        max-width: 100% !important;
+    }
+
+    /* Hero banner */
+    .hero {
+        padding: 1.3rem 0.7rem !important;
+        border-radius: 14px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-title {
+        font-size: 1.6rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 1.7rem !important;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    h3 {
+        font-size: 1.15rem !important;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+    /* Buttons */
+    div.stButton > button {
+        width: 100% !important;
+        min-height: 48px !important;
+        font-size: 0.95rem !important;
+        border-radius: 12px !important;
+    }
+
+    /* Input fields */
+    div[data-baseweb="select"],
+    div[data-baseweb="input"] {
+        width: 100% !important;
+    }
+
+    /* Prevent horizontal overflow */
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    h1, h2, h3, p {
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Images */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+
+/* =========================================
+   SMALL iPHONES
+   iPhone SE / older iPhones
+   approx. 320px - 390px
+   ========================================= */
+
+@media screen and (max-width: 390px) {
+
+    .block-container {
+        padding-left: 0.55rem !important;
+        padding-right: 0.55rem !important;
+    }
+
+    .hero {
+        padding: 1rem 0.5rem !important;
+    }
+
+    .hero-title {
+        font-size: 1.35rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.78rem !important;
+    }
+
+    div.stButton > button {
+        font-size: 0.85rem !important;
+    }
+}
+
+
+/* =========================================
+   LARGE iPHONES + ANDROID PHONES
+   approx. 391px - 480px
+   ========================================= */
+
+@media screen and (min-width: 391px) and (max-width: 480px) {
+
+    .hero-title {
+        font-size: 1.55rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.88rem !important;
+    }
+
+    .block-container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
