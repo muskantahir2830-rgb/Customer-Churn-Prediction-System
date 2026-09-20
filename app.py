@@ -288,16 +288,17 @@ div[data-testid="column"] {
         padding-right: 0.75rem !important;
     }
 }
-/* Hide Streamlit Cloud branding */
-footer {
-    visibility: hidden !important;
-}
-
+/* Hide Streamlit Cloud bottom-right badges */
+[data-testid="stAppDeployButton"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
 [data-testid="stStatusWidget"] {
     display: none !important;
 }
 
-.stDeployButton {
+/* Hide Streamlit viewer badges */
+.viewerBadge_container__1QSob,
+.viewerBadge_link__1S137 {
     display: none !important;
 }
 </style>
